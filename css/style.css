@@ -1,0 +1,130 @@
+body
+{    
+    /* background-color: black; */
+    background-image: url(./roma.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 
+{
+    color:bisque;
+    font-family: 'Rampart One', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+    width: 1000px;
+    margin-bottom: 80px;
+}
+
+form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(30, 31, 31, 0.39);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgb(28, 31, 30);
+    width: 600px;
+    height: 350px;
+    padding: 35px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: bisque;
+}
+
+.divForm
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    height: 200px;
+}
+
+label 
+{
+    margin: 10px;
+}
+
+#mensagem, #resultado
+{
+    width: 600px;
+    height: 25px;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#tipoDeCodificador 
+{
+    width: 180px;
+    height: 25px;
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.chaveInvisivel
+{
+    display: none;
+}
+
+#divRadio
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin: 20px;
+    width: 300px;    
+}
+
+#divBotao
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.botoes
+{
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(68, 63, 63);
+    font-family: 'Quicksand', sans-serif;
+    cursor: pointer;
+}
+
+.botoes:hover
+{
+    color: bisque;
+    background-color: rgb(124, 61, 16);
+}
+
+footer
+{
+    margin-top: 40px;
+}
+
+.footerParagrafo
+{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    
+}

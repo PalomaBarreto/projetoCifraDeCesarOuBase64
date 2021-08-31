@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passinho do Romano</title>
+  
+  <!-- links dos arquivos de css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- links das fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+  
+  
+</head>
+
+<body>
+  
+  <header>
+    <h1>Codificador e Decodificador Romano</h1>
+  </header>
+  
+  <main>
+    <form>
+      
+      <div class="divForm" id="divMensagem">
+        <label for="mensagem">Insira abaixo a mensagem que deseja codificar ou decodificar:</label>
+        <textarea name="mensagem" id="mensagem" cols="20" rows="50"></textarea>
+      </div>
+      
+      <div class="divForm" id="divTipoDeCodificador">
+        <label for="tipoDeCodificador">Qual método você deseja utilizar?</label>
+        <select name="codificadores" id="tipoDeCodificador">
+          <option value="vazio"></option>
+          <option value="base64">Base64</option>
+          <option value="cifra">Cifra de César</option>
+        </select>
+      </div>
+      
+      <div class="divForm" id="divChave">
+        <label class="chaveInvisivel" for="chave" id="labelChave">Chave:</label>
+        <input class="chaveInvisivel" type="number" name="chave" id="inputChave">
+      </div>
+      
+      <div class="divForm" id="divRadio">
+        <input type="radio" name="radio" id="radioCodificar" value="codificar" checked>
+        <label for="codificado">Codificar</label>
+        
+        <input type="radio" name="radio" id="radioDecodificar" value="decodificar">
+        <label for="decodificado">Decodificar</label> 
+      </div>
+      
+      <div class="divForm" id="divBotao">
+        <button type="submit" id="submeter" class="botoes">codificar a mensagem</button>
+        <button type="submit" id="zerar" class="botoes">limpar os campos</button>
+      </div>
+      
+      <div class="divForm" id="divResultado">
+        <label for="resultado">Resultado:</label>
+        <textarea name="resultado" id="resultado" cols="20" rows="50"></textarea>
+      </div>
+      
+    </form>
+    
+  </main> 
+  
+  <footer>
+    <p class="footerParagrafo">&copy; Todos os direitos reservados. Página desenvolvida para fins didáticos.</p>
+    <p class="footerParagrafo">Paloma Carvalho | Resilia Educação - Turma 8 🦉</p>
+  </footer>
+  
+  <!-- link do arquivo de javascript -->
+  <script src="index.js" defer></script>
+  
+</body>
+
+</html>
